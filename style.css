@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: #7fa5c2;
 }
 
 main {
@@ -45,6 +46,10 @@ h1 {
     margin-left: 10px;
 }
 
+#add-task-button:hover {
+    background: #b78bd5;
+}
+
 #task-list {
     list-style: none;
     width: 50%;
@@ -69,7 +74,7 @@ h1 {
 }
 
 .delete-btn {
-    background: red;
+    background: #c40000;
     border: none;
     border-radius: 50%;
     color: #fff;
@@ -83,3 +88,13 @@ h1 {
     font-size: x-large;
     top: -10%;
 }
+
+.delete-btn:hover {
+  color: #000;
+}
+
+.check:checked~span.task {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
